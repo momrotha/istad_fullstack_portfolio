@@ -10,7 +10,7 @@
     }
 
     header {
-      background-color: #000;
+      background-color: #111827;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       position: sticky;
       top: 0;
@@ -476,7 +476,7 @@
     }
     
     .location-section {
-      background-color: #f3f4f6;
+
       padding-top: 70px;
     }
     
