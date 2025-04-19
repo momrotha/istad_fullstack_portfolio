@@ -1,146 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Portfolio</title>
-  <meta name="description" content="Welcome to my portfolio. I’m a creative web developer and designer passionate about building beautiful, responsive websites. Contact me today!" />
-  <meta property="og:title" content="My Portfolio - Web Developer & Designer" />
-  <meta property="og:description" content="Creative web developer and designer. Explore my work and get in touch!" />
-  <meta property="og:image" content="./logo-1.jpg" />
-  <meta property="og:url" content="https://istad-fullstack-portfolio.vercel.app/" />
-  <meta property="og:type" content="website" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <meta
+      name="description"
+      content="Welcome to my portfolio. I’m a creative web developer and designer passionate about building beautiful, responsive websites. Contact me today!"
+    />
+    <meta
+      property="og:title"
+      content="My Portfolio - Web Developer & Designer"
+    />
+    <meta
+      property="og:description"
+      content="Creative web developer and designer. Explore my work and get in touch!"
+    />
+    <meta property="og:image" content="./logo-1.jpg" />
+    <meta
+      property="og:url"
+      content="https://istad-fullstack-portfolio.vercel.app/"
+    />
+    <meta property="og:type" content="website" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header>
-    <nav>
-      <div class="nav-container">
-        <img class="img-logo" src="logo-1.jpg" alt="logo" >
-        <div class="nav-links" id="menu">
-          <a href="./index.html">Home</a>
-          <a href="./project.html">Projects</a>
-          <a href="./about.html">About</a>
-          <a href="./contact.html">Contact Me</a>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="location-section">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="subheading">Location</h2>
-          <p class="main-heading">Our Store</p>
-          <p class="description-p">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam voluptatum cupiditate veritatis
-            in, accusamus quisquam.
-          </p>
-        </div>
-
-        <div class="info-grid">
-          <article class="info-box">
-            <div class="icon-box">
-              <i class="fa-solid fa-location-dot"></i>
-            </div>
-            <div class="info-text">
-              <h3>Address</h3>
-              <p>Prek Kampus, Dang kor, Phnom Penh</p>
-            </div>
-          </article>
-
-          <article class="info-box">
-            <div class="icon-box">
-              <i class="fa-solid fa-phone-volume"></i>
-            </div>
-            <div class="info-text">
-              <h3>Phone number</h3>
-              <a href="tel:+855883062075">(+855) 88 306 2075</a>
-            </div>
-          </article>
-
-          <article class="info-box">
-            <div class="icon-box">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="info-text">
-              <h3>Email</h3>
-              <a href="mailto:rothamom22@gmail.com">rothamom22@gmail.com</a>
-            </div>
-          </article>
-
-          <article class="info-box">
-            <div class="icon-box">
-              <i class="fa-brands fa-facebook"></i>
-            </div>
-            <div class="info-text">
-              <h3>Facebook</h3>
-              <a href="https://web.facebook.com/ah.rotha.71271">Mom Rotha</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container-footer">
-      <div class="footer-grid">
-
-        <section class="footer-section">
-          <img class="img-logo" src="logo-1.jpg" alt="logo">
-          <p class="description">Building confident solutions for the modern world.</p>
-          <div class="socials">
-            <a href="https://web.facebook.com/ah.rotha.71271" target="_blank" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://github.com/momrotha/" target="_blank" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.instagram.com/rothamomm/" target="_blank" class="social-link" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/rotha-mom-266a512ba/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <img class="img-logo" src="logo-1.jpg" alt="logo" />
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="menu-icon">☰</label>
+          <div class="nav-links">
+            <a href="./index.html">Home</a>
+            <a href="./project.html">Projects</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact Me</a>
           </div>
-        </section>
+        </div>
+      </nav>
+    </header>
 
-        <section class="footer-section">
-          <h3 class="footer-title">Quick Links</h3>
-          <ul class="footer-links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./project.html">Projects</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-        </section>
+    <main>
+      <section class="location-section">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="subheading">Location</h2>
+            <p class="main-heading">Contact Me</p>
+            <p class="description-p">
+              I'm always open to discussing new projects, creative ideas, or
+              opportunities to be part of your vision. Whether you’re a business
+              looking to build or improve your digital presence, a fellow
+              developer looking to collaborate, or someone who just wants to say
+              hello—feel free to reach out! You can contact me via the form
+              below, email, or connect through my social media. I’ll get back to
+              you as soon as possible!
+            </p>
+          </div>
 
-        <section class="footer-section">
-          <h3 class="footer-title">Services</h3>
-          <ul class="footer-links">
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Mobile Apps</a></li>
-            <li><a href="#">UI/UX Design</a></li>
-            <li><a href="#">Digital Marketing</a></li>
-          </ul>
-        </section>
+          <div class="info-grid">
+            <article class="info-box">
+              <div class="icon-box">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="info-text">
+                <h3>Address</h3>
+                <p>Prek Kampus, Dang kor, Phnom Penh</p>
+              </div>
+            </article>
 
-        <section class="footer-section">
-          <h3 class="footer-title">Contact Us</h3>
-          <address class="contact-info">
-            <p>Location: Prek Kampus, Dang Kor, Phnom Penh.</p>
-            <p>Email: <a href="mailto:rothamom22@gmail.com">rothamom22@gmail.com</a></p>
-            <p>Phone: <a href="tel:+855883062075">(+855) 88 306 2075</a></p>
-          </address>
-        </section>
+            <article class="info-box">
+              <div class="icon-box">
+                <i class="fa-solid fa-phone-volume"></i>
+              </div>
+              <div class="info-text">
+                <h3>Phone number</h3>
+                <a href="tel:+855883062075">(+855) 88 306 2075</a>
+              </div>
+            </article>
 
-      </div>
+            <article class="info-box">
+              <div class="icon-box">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="info-text">
+                <h3>Email</h3>
+                <a href="mailto:rothamom22@gmail.com">rothamom22@gmail.com</a>
+              </div>
+            </article>
 
-      <div class="footer-bottom">
-        <p>&copy; 2025 Portfolio Mom Rotha</p>
-        <div class="footer-policy">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Cookies</a>
+            <article class="info-box">
+              <div class="icon-box">
+                <i class="fa-brands fa-facebook"></i>
+              </div>
+              <div class="info-text">
+                <h3>Facebook</h3>
+                <a href="https://web.facebook.com/ah.rotha.71271">Mom Rotha</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container-footer">
+        <div class="footer-grid">
+          <section class="footer-section">
+            <img class="img-logo" src="logo-1.jpg" alt="logo" />
+            <p class="description">
+              Building confident solutions for the modern world.
+            </p>
+            <div class="socials">
+              <a
+                href="https://web.facebook.com/ah.rotha.71271"
+                target="_blank"
+                class="social-link"
+                aria-label="Facebook"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://github.com/momrotha/"
+                target="_blank"
+                class="social-link"
+                aria-label="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/rothamomm/"
+                target="_blank"
+                class="social-link"
+                aria-label="Instagram"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/rotha-mom-266a512ba/"
+                target="_blank"
+                class="social-link"
+                aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </section>
+
+          <section class="footer-section">
+            <h3 class="footer-title">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./project.html">Projects</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </section>
+
+          <section class="footer-section">
+            <h3 class="footer-title">Services</h3>
+            <ul class="footer-links">
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Mobile Apps</a></li>
+              <li><a href="#">UI/UX Design</a></li>
+              <li><a href="#">Digital Marketing</a></li>
+            </ul>
+          </section>
+
+          <section class="footer-section">
+            <h3 class="footer-title">Contact Us</h3>
+            <address class="contact-info">
+              <p>Location: Prek Kampus, Dang Kor, Phnom Penh.</p>
+              <p>
+                Email:
+                <a href="mailto:rothamom22@gmail.com">rothamom22@gmail.com</a>
+              </p>
+              <p>Phone: <a href="tel:+855883062075">(+855) 88 306 2075</a></p>
+            </address>
+          </section>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Portfolio Mom Rotha</p>
+          <div class="footer-policy">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookies</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
