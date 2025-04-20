@@ -31,7 +31,7 @@ header {
   width: 100%;
   justify-content: space-between; /* កែពី flex-end ទៅ space-between */
   position: relative;
-  padding-bottom: 15px;
+  padding: 7px 20px;
 }
 .img-logo,
 .img-logo-footer {
@@ -128,7 +128,7 @@ main {
   padding: 0.7rem 1.5rem;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 20px;
   transition: background 0.3s;
 }
 .follow-btn {
@@ -542,6 +542,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .skill-item img {
@@ -549,7 +550,24 @@ main {
   height: 60px;
   object-fit: contain;
   margin-bottom: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
+.skill-item img:hover {
+  transform: scale(1.1);
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.skill-item img:hover {
+  animation: bounce 0.5s;
+}
+
 
 .skill-item p {
   font-size: 0.9rem;
