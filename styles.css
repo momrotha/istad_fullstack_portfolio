@@ -18,19 +18,27 @@ header {
   top: 0;
   z-index: 1000;
 }
-.nav-container {
-  margin: auto;
-  padding: 1rem 2rem;
+.navbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  justify-content: space-between; /* កែពី flex-end ទៅ space-between */
+  position: relative;
+  padding-bottom: 15px;
 }
 .img-logo,
 .img-logo-footer {
   height: 50px;
   width: 50px;
   border-radius: 50%;
+  
 }
 
 /* Navigation */
@@ -94,6 +102,10 @@ main {
 }
 .text-section {
   flex: 1 1 500px;
+  text-align: left;
+  color: #6c757d;
+  margin: 1.5rem;
+  font-size: 18px;
 }
 .text-section h1 {
   background: linear-gradient(90deg, rgb(202, 61, 85), rgb(122, 3, 220));
@@ -106,11 +118,7 @@ main {
 .text-section h1 span {
   color: #007bff;
 }
-.text-section p {
-  margin-bottom: 1.5rem;
-  font-size: 18px;
-  color: #6c757d;
-}
+
 .buttons {
   display: flex;
   gap: 1rem;
@@ -188,6 +196,15 @@ main {
 /* Section & Grid */
 .section-hero {
   text-align: center;
+  
+}
+.hero-title{
+  font-size: 2.5rem;
+}
+.hero-description{
+  font-size: 18px;
+  color: #666;
+  margin: 16px auto 20px auto;
 }
 .section h2 {
   font-size: 2rem;
@@ -346,17 +363,6 @@ main {
   font-weight: bold;
   font-size: 40px;
 }
-.description {
-  margin-bottom: 2rem;
-  line-height: 1.6;
-}
-.description-p {
-  max-width: 600px;
-  color: #6b7280;
-  padding: 20px;
-  font-size: 17px;
-  margin: 0 auto;
-}
 
 /* Info Section */
 .info-wrapper {
@@ -446,7 +452,7 @@ main {
   color: #6b7280;
   padding: 20px;
   font-size: 17px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .info-grid {
@@ -502,6 +508,52 @@ main {
   font-size: 1rem;
   line-height: 1.5;
   text-decoration: none;
+}
+/* skills */
+.skills-section {
+  margin: 20px;
+  text-align: center;
+}
+
+.skills-title {
+  padding: 30px;
+  font-size: 2.5rem;
+}
+
+.skills-category {
+  margin-bottom: 40px;
+
+}
+
+.skills-category h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.skill-item p {
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 /* Footer */
